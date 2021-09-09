@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Icon.png">
+    <title>Movie Club</title>
+</head>
+<body>
+    <header class="bgheader" id="home">
+        <div class="macface">
+            <div class="nav-wrapper">
+                <div class="dot-wrapper">
+                    <a href="#reg"><div id="dot-1" class="browser-dot"></div></a>
+                    <a href="#table"><div id="dot-2" class="browser-dot"></div></a>
+                    <a href=""><div id="dot-3" class="browser-dot"></div></a>
+                </div> 
+            </div> 
+            <div class="firstlogo">
+                <img src="images/Icon.png" alt="logo">
+            </div>
+            <div class="movecenter">
+                <div>
+                    <img src="images/Welcome Club.png" alt="welcome" class="welcome1" id="welimg">
+                </div>
+                <div>
+                    <a href="#reg"><button class="btn btn-danger welcome2">Register Here</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="form-section" id="reg">
+        <div>
+            <div>
+                <img src="images/Icon2.png" alt="logo">
+            </div>
+            <div class="ptext">
+                <h2>MEMBER REGISTRATION</h2>
+            </div>
+        </div>
+        <div class="formstyle form-data">
+            <form id="dataform" class="form-size">
+                <div class="form-col form-style">
+                    <div class="col">
+                        <label for="fname">First Name:</label>
+                        <input type="text" class="form-control" placeholder="First Name" id="firstname"><br>
+                    </div>
+                    <div class="col">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" class="form-control" placeholder="Last Name" id="lastname"><br>
+                    </div>
+                    <div class="col">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" placeholder="Age" id="yourage"><br>
+                    </div>
+                    <div class="col">
+                        <label for="clevel">Current Level:</label>
+                        <input type="number" class="form-control" placeholder="Current Level" id="yourlevel"><br>
+                    </div>
+                    <div class="col">
+                        <label for="favclub">Favourite Club:</label>
+                        <input type="text" class="form-control" placeholder="Favourite Club" id="yourclub"><br>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-danger movebutton" id="submit">Save Member</button>
+                    </div>
+                </div>
+                
+            </form>            
+        </div>
+
+        <a href="#table">View Table</a>
+
+    </section>
+
+    <section class="table-section" id="table">
+        <div>
+            <a href="#home"><img src="images/Icon2.png" alt="logo"></a>
+        </div>
+        <div class="tablestyling">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>USER ID</th>
+                        <th>FIRST NAME</th>
+                        <th>LAST NAME</th>
+                        <th>AGE (years)</th>
+                        <th>CURRENT LEVEL</th>
+                        <th>FAVOURITE CLUB</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody id="table-data"></tbody>
+            </table>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <script src="./js/style.js"></script>
+</body>
+</html>
